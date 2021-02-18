@@ -9,21 +9,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 class GreeterTest {
 
-    final String NAME = "test";
+    private final Greeter greeter = new Greeter();
 
     @Test
     public void greet_shouldReturnHelloWithName() {
-        Greeter greeter = new Greeter();
-        String greet = greeter.greet(NAME);
-
-        assertEquals(greet, "Hello " + NAME);
+        String greet = greeter.greet("name");
+        assertEquals(greet, "Hello Name");
     }
 
     @Test
     public void greet_shouldTrimsInput() {
-        Greeter greeter = new Greeter();
-        String greet = greeter.greet(" " + NAME + " ");
+        String greet = greeter.greet(" name ");
+        assertEquals(greet, "Hello Name");
+    }
 
-        assertEquals(greet, "Hello " + NAME);
+    @Test
+    public void greet_shouldCapitalizeFirstLetterOfInput() {
+        String greet = greeter.greet("name");
+        assertEquals(greet, "Hello Name");
     }
 }
