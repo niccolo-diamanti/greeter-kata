@@ -1,5 +1,8 @@
 package com.ndiamanti.greeter;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class GreeterImpl implements Greeter {
 
     private final TimeHandlerImpl timeHandler;
@@ -10,6 +13,7 @@ public class GreeterImpl implements Greeter {
 
     @Override
     public String greet(String name) {
+        log.info("[Greeter] - greet method called");
         if (name != null)
             name = trimAndCapitalizeFirstLetter(name);
         else
