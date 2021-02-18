@@ -18,4 +18,12 @@ class GreeterTest {
 
         assertEquals(greet, "Hello " + NAME);
     }
+
+    @Test
+    public void greet_shouldTrimsInput() {
+        Greeter greeter = new Greeter();
+        String greet = greeter.greet(" " + NAME + " ");
+
+        assertEquals(greet, "Hello " + NAME);
+    }
 }
