@@ -1,5 +1,6 @@
-package com.ndiamanti.greeter;
+package com.ndiamanti.greeter.service.impl;
 
+import com.ndiamanti.greeter.service.Greeter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
