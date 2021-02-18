@@ -31,7 +31,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8af18ca-5e76-409f-b29c-765761236716" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
@@ -190,7 +189,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613585994254</updated>
-      <workItem from="1613586001578" duration="2225000" />
+      <workItem from="1613586001578" duration="3413000" />
     </task>
     <servers />
   </component>
@@ -212,22 +211,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1613643750082">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1613645413762">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613643750082" />
-    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1613643750080">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613645413762" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1613645413760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613643750080" />
-    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1613643750080">
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613645413760" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1613645413759">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613643750080" />
-    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1613643750081">
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613645413759" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1613645413761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613643750081" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613645413761" />
     <state x="450" y="200" width="540" height="540" key="StructurePopup" timestamp="1613586708652">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
