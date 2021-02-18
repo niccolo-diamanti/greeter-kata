@@ -3,8 +3,6 @@ package com.ndiamanti.greeter;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.time.LocalTime;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -12,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @SpringBootTest
 class GreeterTest {
 
-    private final Greeter greeter = new Greeter();
+    private final GreeterImpl greeter = new GreeterImpl();
 
     @Test
     public void greet_shouldReturnHelloWithName() {
@@ -34,14 +32,21 @@ class GreeterTest {
 
     @Test
     public void greet_shouldThrowExceptionIfNameIsNull() {
-        Throwable exception = assertThrows(Greeter.NullNameException.class, () -> greeter.greet(null));
+        Throwable exception = assertThrows(GreeterImpl.NullNameException.class, () -> greeter.greet(null));
         assertEquals("Name parameter cannot be null", exception.getMessage());
     }
 
     @Test
     public void greet_shouldReturnGoodMorningIfTimeIsInRange() {
-        greeter.setTime(LocalTime.of(6, 1));
+        greeter.setTime(Greeter.MORNING_MIN.plusMinutes(1));
         String greet = greeter.greet("name");
         assertEquals(greet, "Good morning Name");
+    }
+
+    @Test
+    public void greet_shouldReturnGoodEveningIfTimeIsInRange() {
+        greeter.setTime(Greeter.EVENING_MIN.plusMinutes(1));
+        String greet = greeter.greet("name");
+        assertEquals(greet, "Good evening Name");
     }
 }
