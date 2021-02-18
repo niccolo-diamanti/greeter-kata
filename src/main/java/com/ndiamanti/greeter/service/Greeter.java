@@ -1,4 +1,4 @@
-package com.ndiamanti.greeter;
+package com.ndiamanti.greeter.service;
 
 public interface Greeter {
 

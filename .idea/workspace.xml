@@ -34,8 +34,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/GreeterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/GreeterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/Greeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/service/Greeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/GreeterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/service/impl/GreeterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/TimeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/service/TimeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/TimeHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndiamanti/greeter/service/impl/TimeHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ndiamanti/greeter/GreeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ndiamanti/greeter/GreeterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ndiamanti/greeter/TimeHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ndiamanti/greeter/TimeHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,6 +265,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1613665674279" />
+    <state x="257" y="373" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1613668742693">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="257" y="373" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1613668742693" />
     <state x="0" y="0" width="1440" height="900" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613666641961">
       <screen x="0" y="25" width="1440" height="817" />
     </state>
@@ -273,22 +281,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="469" height="646" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1613665699898" />
-    <state width="1398" height="322" key="GridCell.Tab.0.bottom" timestamp="1613668346984">
+    <state width="1398" height="322" key="GridCell.Tab.0.bottom" timestamp="1613668765987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="322" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613668346984" />
-    <state width="1398" height="322" key="GridCell.Tab.0.center" timestamp="1613668346981">
+    <state width="1398" height="322" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1613668765987" />
+    <state width="1398" height="322" key="GridCell.Tab.0.center" timestamp="1613668765986">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="322" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613668346981" />
-    <state width="1398" height="322" key="GridCell.Tab.0.left" timestamp="1613668346980">
+    <state width="1398" height="322" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1613668765986" />
+    <state width="1398" height="322" key="GridCell.Tab.0.left" timestamp="1613668765986">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="322" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613668346980" />
-    <state width="1398" height="322" key="GridCell.Tab.0.right" timestamp="1613668346983">
+    <state width="1398" height="322" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1613668765986" />
+    <state width="1398" height="322" key="GridCell.Tab.0.right" timestamp="1613668765987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="322" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613668346983" />
+    <state width="1398" height="322" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613668765987" />
     <state width="1398" height="298" key="GridCell.Tab.1.bottom" timestamp="1613666960236">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

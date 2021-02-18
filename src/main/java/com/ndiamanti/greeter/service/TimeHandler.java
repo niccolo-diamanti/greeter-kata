@@ -1,4 +1,4 @@
-package com.ndiamanti.greeter;
+package com.ndiamanti.greeter.service;
 
 import java.time.LocalTime;
 

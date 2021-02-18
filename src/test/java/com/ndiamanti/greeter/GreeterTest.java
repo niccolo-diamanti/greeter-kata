@@ -1,5 +1,8 @@
 package com.ndiamanti.greeter;
 
+import com.ndiamanti.greeter.service.impl.GreeterImpl;
+import com.ndiamanti.greeter.service.impl.TimeHandlerImpl;
+import com.ndiamanti.greeter.service.Greeter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

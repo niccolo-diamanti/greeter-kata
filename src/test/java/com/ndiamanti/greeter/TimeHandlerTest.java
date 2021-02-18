@@ -1,9 +1,10 @@
 package com.ndiamanti.greeter;
 
+import com.ndiamanti.greeter.service.impl.TimeHandlerImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.ndiamanti.greeter.TimeHandler.*;
+import static com.ndiamanti.greeter.service.TimeHandler.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
