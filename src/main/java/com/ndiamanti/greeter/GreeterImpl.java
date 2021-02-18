@@ -1,16 +1,11 @@
 package com.ndiamanti.greeter;
 
-import java.time.LocalTime;
-
 public class GreeterImpl implements Greeter {
 
-    private LocalTime time;
+    private final TimeHandlerImpl timeHandler;
 
-    public GreeterImpl() {
-    }
-
-    public void setTime(LocalTime time) {
-        this.time = time;
+    public GreeterImpl(TimeHandlerImpl timeHandler) {
+        this.timeHandler = timeHandler;
     }
 
     @Override
@@ -20,16 +15,11 @@ public class GreeterImpl implements Greeter {
         else
             throw new NullNameException();
 
-        if (isTimeInRange(MORNING_MIN, MORNING_MAX))
-            return "Good morning " + name;
-        else if (isTimeInRange(EVENING_MIN, EVENING_MAX))
-            return "Good evening " + name;
+        String partOfDay = timeHandler.getCurrentPartOfDay();
+        if (partOfDay != null)
+            return "Good " + partOfDay + " " + name;
         else
             return "Hello " + name;
-    }
-
-    private boolean isTimeInRange(LocalTime min, LocalTime max) {
-        return time != null && time.isAfter(min) && time.isBefore(max);
     }
 
     private String trimAndCapitalizeFirstLetter(String str) {
@@ -38,7 +28,6 @@ public class GreeterImpl implements Greeter {
     }
 
     public static class NullNameException extends RuntimeException {
-
         public NullNameException() {
             super("Name parameter cannot be null");
         }

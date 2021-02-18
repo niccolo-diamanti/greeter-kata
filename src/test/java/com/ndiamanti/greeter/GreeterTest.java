@@ -1,33 +1,46 @@
 package com.ndiamanti.greeter;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
+import static org.mockito.Mockito.when;
 
 @SpringBootTest
 class GreeterTest {
 
-    private final GreeterImpl greeter = new GreeterImpl();
+    @Mock
+    private TimeHandlerImpl timeHandler;
+
+    private Greeter greeter;
+
+    @BeforeEach
+    private void initilize() {
+        greeter = new GreeterImpl(timeHandler);
+    }
 
     @Test
     public void greet_shouldReturnHelloWithName() {
+        when(timeHandler.getCurrentPartOfDay()).thenReturn(null);
         String greet = greeter.greet("name");
-        assertEquals(greet, "Hello Name");
+        assertEquals("Hello Name", greet);
     }
 
     @Test
     public void greet_shouldTrimsInput() {
+        when(timeHandler.getCurrentPartOfDay()).thenReturn(null);
         String greet = greeter.greet(" name ");
-        assertEquals(greet, "Hello Name");
+        assertEquals("Hello Name", greet);
     }
 
     @Test
     public void greet_shouldCapitalizeFirstLetterOfInput() {
+        when(timeHandler.getCurrentPartOfDay()).thenReturn(null);
         String greet = greeter.greet("name");
-        assertEquals(greet, "Hello Name");
+        assertEquals("Hello Name", greet);
     }
 
     @Test
@@ -38,15 +51,22 @@ class GreeterTest {
 
     @Test
     public void greet_shouldReturnGoodMorningIfTimeIsInRange() {
-        greeter.setTime(Greeter.MORNING_MIN.plusMinutes(1));
+        when(timeHandler.getCurrentPartOfDay()).thenReturn("morning");
         String greet = greeter.greet("name");
-        assertEquals(greet, "Good morning Name");
+        assertEquals("Good morning Name", greet);
     }
 
     @Test
     public void greet_shouldReturnGoodEveningIfTimeIsInRange() {
-        greeter.setTime(Greeter.EVENING_MIN.plusMinutes(1));
+        when(timeHandler.getCurrentPartOfDay()).thenReturn("evening");
         String greet = greeter.greet("name");
-        assertEquals(greet, "Good evening Name");
+        assertEquals("Good evening Name", greet);
+    }
+
+    @Test
+    public void greet_shouldReturnGoodNightIfTimeIsInRange() {
+        when(timeHandler.getCurrentPartOfDay()).thenReturn("night");
+        String greet = greeter.greet("name");
+        assertEquals("Good night Name", greet);
     }
 }
